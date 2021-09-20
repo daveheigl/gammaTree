@@ -1,6 +1,16 @@
-#Sept 9, 2021
+#!/usr/bin/env ruby
+
 #this program reads the input file, counts the raw characters that aren't punctuation and prints them
 #eventual goal is to do pattern finding in hebrew
+
+#pulled value data from https://www.hebcal.com/home/1824/numerical-values-of-hebrew-letters
+puts "start of program"
+
+File.readlines('gamValues.csv').each do |line|
+   puts "#{line}"
+end
+
+puts "/n --- /n"
 
 inputFile = File.open("gen1-1.txt", "r:utf-8")
 textLines = inputFile.readlines
