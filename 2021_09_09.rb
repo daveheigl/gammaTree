@@ -6,7 +6,7 @@
 #pulled value data from https://www.hebcal.com/home/1824/numerical-values-of-hebrew-letters
 puts "start of program"
 
-File.readlines('gamValues.csv').each do |line|
+File.readlines('gamValues.csv', chomp:true).each do |line|
    puts "#{line}"
 end
 
