@@ -32,7 +32,7 @@ textTotal = 0
 for b in text.chars do
 
      if b >= "א"
-          puts "#{b} #{i} #{letterToNumber[b]}"
+          puts "#{b}\t#{i}\t#{letterToNumber[b]}"
           textTotal += letterToNumber[b].to_i;
           i+=1
      end
