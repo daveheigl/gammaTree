@@ -12,7 +12,7 @@ if ARGV.length != 2
   exit
 end
 
-File.readlines('gamValues.csv', chomp:true).each do |line|
+File.readlines(ARGV[0], chomp:true).each do |line|
    puts "#{line}"
    localArray = line.split(",");
    if(localArray.count == 2)
@@ -24,11 +24,12 @@ end
 puts "/n --- /n"
 
 
-inputFile = File.open("gen1-1.txt", "r:utf-8")
-textLines = inputFile.readlines
-text = textLines.join
-inputFile.close
+#inputFile = File.open("gen1-1.txt", "r:utf-8")
+#textLines = inputFile.readlines
+#text = textLines.join
+#inputFile.close
 
+text = ARGV[1]
 puts "Counted #{text.length} raw characters in gen 1:1\n\n";
 
 i = 1
