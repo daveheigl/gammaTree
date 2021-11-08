@@ -30,7 +30,7 @@ puts "/n --- /n"
 #inputFile.close
 
 text = ARGV[1]
-puts "Counted #{text.length} raw characters in gen 1:1\n\n";
+puts "Counted #{text.length} raw characters\n\n";
 
 i = 1
 textTotal = 0
@@ -44,5 +44,5 @@ for b in text.chars do
      end
 end
 
-puts "Counted #{i-1} non-punctuation characters in gen 1:1\n\n";
+puts "Counted #{i-1} non-punctuation characters\n\n";
 puts "Total counted value: #{textTotal}"
