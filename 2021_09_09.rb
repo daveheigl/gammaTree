@@ -7,6 +7,11 @@
 puts "start of program"
 letterToNumber = Hash.new
 
+if ARGV.length != 2
+  puts "Usage: gamValues.rb pointValue.csv textToConvert"
+  exit
+end
+
 File.readlines('gamValues.csv', chomp:true).each do |line|
    puts "#{line}"
    localArray = line.split(",");
