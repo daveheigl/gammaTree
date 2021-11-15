@@ -24,12 +24,12 @@ end
 puts "/n --- /n"
 
 
-#inputFile = File.open("gen1-1.txt", "r:utf-8")
-#textLines = inputFile.readlines
-#text = textLines.join
-#inputFile.close
+inputFile = File.open(ARGV[1], "r:utf-8")
+textLines = inputFile.readlines
+text = textLines.join
+inputFile.close
 
-text = ARGV[1]
+#text = ARGV[1]
 puts "Counted #{text.length} raw characters\n\n";
 
 i = 1
